@@ -4,14 +4,6 @@ Execute the below code in a cell by cell and see the output. There are Assignmen
 Use the Spyder run and execute these .py files
 """
 
-
-
-"""
-Error handling in Python is done through the use of exceptions that are caught 
-in try blocks and handled in except blocks. If an error is encountered, 
-a try block code execution is stopped and transferred down to the except block
-"""
-
 try:
     x = int(input("please enter a number: "))
 except Exception as e:
@@ -19,54 +11,51 @@ except Exception as e:
 
 
 
-# while True:
-#     try:
-#         x = int(input("Please enter a number: "))
-#         break
-#     except:
-#         print ("oop's thats not a valid input")
+def division_error():
+    z = 10/0
+    return z
+try:
+   division_error()
+except ZeroDivisionError as err:
+    print("Handling run-time error:", err)
 
-
-# Raise Exceptions
-"""
-Raise allows you to through exception at anytime
-"""
+# raise
 
 x = 10
 if x > 5:
     raise ValueError('x should not exceed 5. The value of x was: {}'.format(x))
 
+# else clause
+
+try:
+    x = int(input("please enter a number: "))
+except Exception as e:
+    print(e)
+else:
+    print("No Exceptions caught")
 
 
-# Assert Error
-"""
-We assert that a certain condition is met. If this condition turns out to be True, 
-then that is excellent! The program can continue. If the condition turns out to be 
-False, you can have the program throw an AssertionError exception
-"""
 
-def apply_discount(product, discount):
-    price = int(product['price'] * (1.0 - discount))
-    assert 0 <= price <= product['price']
-    return price
+# finally clause
 
-shoes = {'name': 'Fancy Shoe', 'price': 400}
+try:
+    x = int(input("please enter a number: "))
+except Exception as e:
+    print(e)
+else:
+    print("No Exceptions caught")
+finally:
+    print("The code block is closed")
 
-#25% off
-apply_discount(shoes, 0.25)
 
-#200% off
-apply_discount(shoes, 2)
+
+
+
 
 # User defined Exceptions
-"""
-Python throws errors and exceptions, when there is a code gone wrong, which may cause program to 
-stop abruptly. Python also provides exception handling method with the help of try-except. Some of 
-the standard exceptions which are most frequent include IndexError, ImportError, IOError, ZeroDivisionError, 
-and FileNotFoundError.
-"""
 
 # Index Error
+
 l1 = [1, 2, 3]
 l1[3]
 

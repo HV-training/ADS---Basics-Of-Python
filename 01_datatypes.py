@@ -1,21 +1,17 @@
 # printing in python
 """
 Execute the below code in a cell by cell and see the output. There are Assignments to do it by your own, so complete that as well
-Use the Spyder run and execute these .py files
+Use the Spyder to run and execute these .py files
 """
 
+# String
 
-print("Hello World") - python 3.0
-#print "Hello world" - python 2.0
+'Hello World'
+"Hello World"
 
-# variables
-"""
-Variables can hold values of different data types. Python is a dynamically typed 
-language hence we need not define the type of the variable while declaring it. 
-The interpreter implicitly binds the value with its type.
-Python enables us to check the type of the variable used in the program. 
-Python provides us the type() function which returns the type of the variable passed
-"""
+print("Hello World")
+
+# Variables
 
 A = "Hello"     # Data type - String
 B = 10          # Data type - Int
@@ -31,13 +27,6 @@ print(type(E))
 
 
 # concatenation
-"""
-Concatenation is combining string with string or string with number or number with number
-
-You can use either + or , to join together
-If you use the "+" to join integers and floats together, then you will perform an arithmetic operation
-If you use the ",", then it will print them out separately, with a space.
-"""
 
 full_name = "Robert Markov"
 company_name = "Hitachi"
@@ -46,6 +35,32 @@ location = "USA"
 concatenation_1 = full_name + company_name + location
 concatenation_2 = full_name, company_name, location
 concatenation_3 = full_name + company_name, location
+
+
+# Assignment - 1
+
+"""
+Create a variable "name" with the value "Williams"
+Create a variable "Account_number" with the value 15678
+Create a variable "Transaction_amount" with the value $10000
+Create a Variable "transaction"  by concatenating above 3 variables. 
+ 
+
+Checkout the variable type by typing print(transaction)
+"""
+
+# Your Code Here
+
+
+
+# Testing - returns True
+
+#('Williams', 15678, '$10000') == transaction
+
+#tuple == type(transaction)
+
+
+
 
 
 

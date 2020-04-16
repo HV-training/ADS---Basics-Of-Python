@@ -4,19 +4,24 @@ Use the Spyder run and execute these .py files
 """
 
 
-
-"""
-The if statement is used to check a condition: if the condition is true, we run a block of statements 
-(called the if-block), else we process another block of statements (called the else-block).
-"""
 x = 5
 y = 10
 
-if x < y:  #True
+if x < y:
     print('x is lesser than y')
 
 
-## if elif else
+x = 4
+
+if x > 5:
+    print('x is greater than 5')
+else:
+    print('x is lesser than 5')
+
+
+'x is greater than 5' if x > 5 else 'x is lesser than 5'
+
+# if elif else
 
 x = 5
 y = 10
@@ -24,8 +29,8 @@ z = 22
 
 if x > y:
     print('x is greater than y')
-elif x > z: #True
-    print('x is less than z')
+elif x < y:
+    print('x is less than y')
 else:
     print('Conditions are not satisfied')
 
@@ -46,6 +51,15 @@ if statement1: #False
         
 else:
     print("false")
+
+
+# Assignment - 3
+    
+"""
+Write a Python to check the letter entered by user is vowel or consonant? 
+"""
+
+
 
 
 
